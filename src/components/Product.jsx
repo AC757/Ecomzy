@@ -36,7 +36,7 @@ const Product = ({post}) => {
         </div>
         
         {
-          //jo post as prop pass hui hai tumhare product ke andar vo cart m exist krti h (cart ke andar aisi koi entity pdi hui hai jiski id tumhare current id ke equal hai)
+          
           cart.some((p) => p.id === post.id) ?
           (<button
           className="text-gray-700 border-2 border-gray-700 rounded-full font-semibold 
