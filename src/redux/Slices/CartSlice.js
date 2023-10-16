@@ -5,11 +5,10 @@ export const CartSlice = createSlice({
     initialState:[],
     reducers:{
         add:(state,action) => {
-            // jo bhi input parameter send kia h vo action.payload ko darshata hai
+            // any input parameter send represents action.payload
             state.push(action.payload);
         },
         remove:(state,action) => {
-            // not understandable
             return state.filter((item) => item.id !== action.payload);
         },
     }
